@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h3 class="title">County Contacts</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let county of countyArray" detail-push (click)="getCountyContact(county);" class="list-item">
+            <span class="list-item-text" >{{ county }}</span>  
+          </ion-item>
+     </ion-list>
+      
+</ion-content>

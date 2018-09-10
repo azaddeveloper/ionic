@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h3 class="title"> Federal Contacts</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+     <ion-item *ngFor="let federal of federalArray" detail-push (click)="openContact(federal);" class="list-item">
+      <span class="list-item-text" >{{ federal.contactName}}</span>  
+       <a href="tel:{{ federal.phoneNumber }}" item-end><span class="call-text" >Call</span></a>
+    </ion-item>
+  </ion-list>
+</ion-content>         

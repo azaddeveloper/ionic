@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h3 class="title">State Contacts</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+     <ion-item *ngFor="let state of stateArray" detail-push (click)="openContact(state);" class="list-item">
+      <span class="list-item-text" >{{ state.contactName}}</span>  
+       <a href="tel:{{ state.phoneNumber }}" item-end><span class="call-text" >Call</span></a>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+

@@ -1,0 +1,201 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.title{
+    text-align: center; 
+    font-size: 20px; 
+   }
+    .list-item{
+        padding-left: 0px!important;
+        cursor: pointer;
+    }
+    .list-item-text{
+        margin-left: 18px;
+        font-size: 14px;
+    }
+    .list-text-header{
+        background: #c6c9d04d!important;
+        font-size: 15px;
+    }  
+    .call-text{
+        color: #488aff;
+    }
+    a{
+        text-decoration: none;
+    }
+
+
+    // .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
+    //     .tab-button-icon {
+    //         background-repeat:no-repeat;
+    //         background-position:center;
+    //         height:24px;
+    //         width:24px;
+    //         background-size:contain;
+    //         -webkit-background-size: contain;
+    //         -moz-background-size: contain;
+    //         -o-background-size: contain;
+    //         &:before {
+    //             display:none;
+    //         }
+    //     }
+    // }
+    
+    // .tabs-ios {
+    //   a[aria-selected=false]{
+    //      .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_inactive.png);
+    //     }
+    //   }
+    //  a[aria-selected=true] {
+    //     .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_active.png);
+    //     }
+    //   }
+    // }          
+    
+    // .tabs-md {
+    //   a[aria-selected=false]{
+    //      .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_inactive.png);
+    //     }   
+    //   }
+    
+    //  a[aria-selected=true] {
+    //    //führ eventuellen text
+    //    //span {
+    //       //color: #f00; //whatever colour you want to use for the text
+    //     //}
+    //     .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_active.png);
+    //     }
+    //   }
+    // }
+    
+    // .tabs-wp {
+    //   a[aria-selected=false]{
+    //      .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_inactive.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_inactive.png);
+    //     }
+    //   }   
+    
+    //  a[aria-selected=true] {   
+    //    //führ eventuellen text
+    //    //span {
+    //       //color: #f00; //whatever colour you want to use for the text
+    //     //}
+    //     .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+    //       background-image: url(../assets/imgs/federal_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+    //       background-image: url(../assets/imgs/state_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+    //       background-image: url(../assets/imgs/county_active.png);
+    //     }
+    //     .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+    //         background-image: url(../assets/imgs/favorites_active.png);
+    //     }
+    //   }
+    // }
+    .tabbar, .tabs-ios, .tabs-md {
+      .tab-button-icon {
+          background-repeat:no-repeat;
+          background-position:center;
+          height:23px;
+          width:45px;
+          &:before {
+              display:none;            
+          }
+      }
+  }
+    .tabs-ios {
+      a[aria-selected=false]{
+        .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label="federal outline"] {
+                background-image: url(../assets/imgs/federal_inactive.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label="state outline"] {
+                background-image: url(../assets/imgs/state_inactive.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label="county outline"] {
+                background-image: url(../assets/imgs/county_inactive.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label="favorites outline"] {
+                  background-image: url(../assets/imgs/favorites_inactive.svg)!important;
+              }
+      }
+      a[aria-selected=true] {
+      .tab-button-icon[ng-reflect-name=federal], .tab-button-icon[aria-label=federal] {
+                background-image: url(../assets/imgs/federal_active.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=state], .tab-button-icon[aria-label=state] {
+                background-image: url(../assets/imgs/state_active.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=county], .tab-button-icon[aria-label=county] {
+                background-image: url(../assets/imgs/county_active.svg)!important;
+              }
+              .tab-button-icon[ng-reflect-name=favorites], .tab-button-icon[aria-label=favorites] {
+                  background-image: url(../assets/imgs/favorites_active.svg)!important;
+              }
+      }
+    }
+   

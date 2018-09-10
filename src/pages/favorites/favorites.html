@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+     
+    <ion-title>
+      <h3 class="title">Favorites</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header> 
+<ion-content>
+  
+    <ion-list style="margin-bottom: 10px;" *ngFor="let indexarray of headerIndexArray;let i = index" >
+      <ion-list-header  class="list-text-header" >{{indexarray}}</ion-list-header>
+       <ion-item *ngFor="let contact  of favoritesArray[i]"  detail-push (click)="openContact(contact);" class="list-item">
+          <span class="list-item-text" >{{contact.contactName}}</span>  
+           <a href="tel:{{contact.phoneNumber}}" item-end><span class="call-text" >Call</span></a>
+      </ion-item>       
+    </ion-list> 
+    <p *ngIf="!favoritesArray || favoritesArray == '' " style="font-size: 20px; margin: 15px 25px 0px;">
+      No Favorites saved.  Open a contact and click on  <ion-icon name="ios-star-outline"></ion-icon> to add a favorite.
+    </p> 
+   
+    
+       
+  </ion-content>
+  
+ 

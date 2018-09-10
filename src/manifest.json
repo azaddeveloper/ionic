@@ -1,0 +1,13 @@
+{
+  "name": "WV Help",
+  "short_name": "WV Help",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/icon-152x152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }],
+  "background_color": "#62B3DE",
+  "theme_color": "#62B3DE"
+}

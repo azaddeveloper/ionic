@@ -1,0 +1,110 @@
+<!--
+  Generated template for the ContactDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+ <ion-navbar>
+    <ion-buttons end>
+      <button *ngIf="!favorite" ion-button icon-only (click)="setfavorite('yes')">
+        <ion-icon name="ios-star-outline"></ion-icon>
+      </button>
+      <button *ngIf="favorite" ion-button icon-only (click)="setfavorite('no')">
+        <ion-icon name="star"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>  
+</ion-header>
+
+
+<ion-content padding>
+   <span class="detail-text-name"> {{ contactValue_contactName }}</span>
+   <div class="hr"> </div>
+   <ion-grid *ngIf="contactPhoneNumber"> 
+   <ion-row>
+      <ion-col col-3>
+       <span>Phone</span> 
+      </ion-col>
+      <ion-col col-5>  
+        {{ contactValue_phoneNumber }}
+      </ion-col>
+      <ion-col col-2>
+        <a href="tel: {{ contactValue_phoneNumber }}" item-end><span class="call-text" >Call</span></a>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="contactFaxNumber">
+      <ion-col col-3>
+       <span>Fax</span>   
+      </ion-col>    
+      <ion-col col-5>    
+        {{ contactValue_faxNumber }}  
+      </ion-col>     
+       
+    </ion-row>
+  </ion-grid>
+  <div>
+    <ion-grid *ngIf="contactMailingStreet1">
+      <ion-row>
+         <ion-col col-12>
+          <b>Mailing Address</b>       
+         </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+         <span> {{ contactValue_mailingStreet1 }}</span>      
+        </ion-col>
+     </ion-row>
+     <ion-row *ngIf="contactMailingStreet2">
+      <ion-col col-12>
+       <span> {{ contactValue_mailingStreet2 }}</span> 
+      </ion-col>
+   </ion-row>
+     <ion-row>
+      <ion-col col-12>
+       <span>{{ contactValue_mailingCity }},{{ contactValue_mailingState }} {{ contactValue_mailingZip }}</span> 
+      </ion-col>
+   </ion-row>
+     </ion-grid>
+  </div>
+  <div>
+    <ion-grid *ngIf="contactPhysicalStreet1">
+      <ion-row>
+         <ion-col col-10>
+          <b>Physical Address</b> 
+         </ion-col>  
+         <ion-col col-2>
+          <a href="javascript:void(0);" (click)="openMap();" item-end><span class="call-text" >Map</span></a>
+          
+         </ion-col>
+      </ion-row>       
+      <ion-row>
+        <ion-col col-12>
+         <span>{{ contactValue_physicalStreet1 }}</span> 
+        </ion-col>
+     </ion-row>
+     <ion-row *ngIf="contactPhysicalStreet2">
+      <ion-col col-12>
+       <span> {{ contactValue_physicalStreet2 }}</span> 
+      </ion-col>
+   </ion-row>
+     <ion-row>
+      <ion-col col-12>
+        <span>{{ contactValue_physicalCity }},{{ contactValue_physicalState }} {{ contactValue_physicalZip }}</span> 
+      </ion-col>
+
+   </ion-row>
+   
+   
+     </ion-grid>   
+  </div>
+  
+  <div style="position: fixed;left: 0;right: 0;bottom: 55px;text-align: center;">
+    <p style="font-size: 18px;margin-bottom: 5px;">
+        Information incorrect or need updated?</p>
+    <a href="https://www.wv.gov/services/WVHelp/Pages/Contact.aspx" style="font-size: 16px;" target="_blank">Please let us know</a>
+  </div>
+</ion-content>  
+
+
+    
